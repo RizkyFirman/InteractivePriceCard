@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <img src="images/bg-pattern.svg" alt="" srcset="" width="100%" height="50%" class="background">
+  <main>
+    <div class="introduction">
+      <h1>Simple, traffic-based pricing</h1>
+      <div class="subtitle">
+        <p>Sign up for our 30-day trial.</p> 
+        <p class="subtitle-2">No credit card required.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="pageviews">
+        <p>100k pageviews</p>
+      </div>
+      
+      <div class="price-per-month">
+        <p id="price">$<span id="nominal">16.00</span></p>
+        <p class=""> / month</p>
+      </div>
+      <div class="slider-container container">
+        <input type="range" min="1" max="100" value="0" class="slider" id="myRange" step="0.01">
+      </div>
+      <div class="opt-bill container">
+        <p>Monthly Billing</p>
+        <div class="switch-btn">
+          <input type="checkbox">
+        </div>
+        <p>Yearly Billing</p>
+        <!-- <span class="discount-text">25% discount</span> -->
+      </div>
+      <div class="cta-container container">
+        <ol>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ol>
+        <a href="#" class="cta-btn">Start my trial</a>
+      </div>
+    </div>
+  </main>
+  
+</body>
+<script src="script.js"></script>
+</html>
